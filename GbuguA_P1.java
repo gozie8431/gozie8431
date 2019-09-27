@@ -3,48 +3,90 @@
    Due date: 9/30/2019
    Location: ST 126 
 */
+import java.util.*;
 
 public class GbuguA_P1
 {
-   public static void main(string[]args);
+   public static void main(String[]args)
    
   { 
    String name;
-   double a, b, c;
-    a= 7.0;
-    b= 9.0;
-    c= 6.0;
-    result1 = 279957;
-    result2 = -7803;
-    result3 = 6.875;
-    result4 = 9.83;
-     279957 = c^7 + 3a;
-     -7803 = b^3 - 3a^3b + b^3;
-     6.875 = (3a-2/4) + (2b-1/8);
-     9.83 = (4c^3+2/3);
+   double aAG, bAG, rAG;
+    aAG= 7.0;
+    bAG= 9.0;
+    rAG= 6.0;
+    double c=5.0;
+      double result1 = Math.pow(c,7) + 3*aAG;
+     double result2 = Math.pow(bAG,3) - Math.pow(3*aAG,3)*bAG + Math.pow(bAG,3);
+    double result3 = (3*aAG-2/4) + (2*bAG-1/8);
+     double result4 = Math.pow(4*rAG,3)+ 2/3;
+   
+ 
+   Scanner keybored=new Scanner(System.in);
+   System.out.println("result1="+ result1);
+   
+   System.out.println("result2="+ result2);
+   
+   System.out.println("result3="+ result3);
+   
+   System.out.println("result4="+ result4);
+   
+   Scanner in=new Scanner(System.in);
+   System.out.println("Enter values,(make sure they are doubles)");
+   
+   aAG=keybored.nextDouble(); 
+   bAG=keybored.nextDouble();
+   rAG=keybored.nextDouble();
+   
+   double newresult1 = Math.pow(c,7) + 3*aAG;
+     double newresult2 = Math.pow(bAG,3) - Math.pow(3*aAG,3)*bAG + Math.pow(bAG,3);
+    double newresult3 = (3*aAG-2/4) + (2*bAG-1/8);
+     double newresult4 = Math.pow(4*rAG,3)+ 2/3;
+   
+
+   
+   System.out.println("newresult1="+ newresult1);
+   
+   System.out.println("newresult2="+ newresult2);
+   
+   System.out.println("newresult3="+ newresult3);
+   
+   System.out.println("newresult4="+ newresult4);
+   
+   System.out.println("input values for strings");
+   
+   String string1=keybored.nextLine();
+   
+     keybored.nextLine();
+   
+   String string2=keybored.nextLine();
+    
+       
+   int Size;
+
+    
+     Scanner length=new Scanner(System.in);
+
+   System.out.print(" string1 contains how many characters?" + "\n");
+   String size1=keybored.nextLine();
+
+
+  System.out.print(" string1" +" "+ size1+ "\n");
+   
+   
+     Scanner length2=new Scanner(System.in);
+
+   System.out.print(" string2 contains how many characters?" + "\n");
+   String size2=keybored.nextLine();
+
+
+  System.out.print(" string2=" +" "+ size2+ "\n");
+   
+   System.out.println((string1)+""+(string2));
+   String string3=keybored.nextLine();
+ 
+
+   
+   
    }
- { 
-   Scanner in=new Scanner(System.in);
-   System.out.println("(c^7 + 3a)");
-   "result1"=in.next();
-   System.out.println("you answer is" + result1 + ".");
- }
-{
-   Scanner in=new Scanner(System.in);
-   System.out.println("(b^3 - 3a3b + b^3)");
-   "result2"=in.next();
-   System.out.println("you answer is" + result2 + ".");
- }
-  { 
-   Scanner in=new Scanner(System.in);
-   System.out.println("((3a-2/4) + (2b-1/8))");
-   "result3"=in.next();
-   System.out.println("you answer is" + result3 + ".");
-  }
-  {
-   Scanner in=new Scanner(System.in);
-   System.out.println("((4c^3+2/3))");
-   "result4"=in.next();
-   System.out.println("you answer is" + result4 + ".");
-  }
-}
+} 
