@@ -158,10 +158,7 @@ public class GbuguA_Lab5
     System.out.print("The Rate =" + " " + rate + "\n");
     System.out.print("The Tax =" + " " + tax + "\n");
     
-   
-   
-   
-   
+ 
     }  
     
  }
